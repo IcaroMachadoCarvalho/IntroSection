@@ -1,3 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap");
+
 body {
-  background-color: white;
+  background-color: rgb(250, 250, 250);
+  position: relative;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.header__navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem 1rem 0.5rem 1rem;
+  gap: 50px;
+}
+
+.header__close {
+  display: none;
+}
+
+.header__main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 60px;
+}
+
+.header__logo {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.header__options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.header__options a {
+  color: rgba(0, 0, 0, 0.507);
+  text-decoration: none;
+  font-family: "Epilogue", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.4s;
+}
+
+.header__options a:hover {
+  color: black;
+}
+
+.dropdown__features,
+.dropdown__company {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropdown__features {
+  position: relative;
+}
+
+.dropdown__features .features__hover span,
+.dropdown__features .features__hover img {
+  position: relative;
+  top: 30%;
+  margin-right: 2px;
+}
+
+.dropdown__features .features__hover {
+  height: 42px;
+}
+
+.header__options .dropdown__features:hover .features__content,
+.features__content:hover {
+  display: block;
+}
+
+.dropdown__features .features__content {
+  position: absolute;
+  top: 42px;
+  right: 2px;
+  background-color: rgb(255, 255, 255);
+  display: none;
+  width: 100px;
+  height: 110px;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 14px 11px 15px 0px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown__features .features__content a {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.dropdown__company {
+  position: relative;
+}
+
+.company__hover {
+  height: 42px;
+}
+
+.dropdown__company .company__hover span,
+.dropdown__company .company__hover img {
+  position: relative;
+  top: 30%;
+  margin-right: 2px;
+}
+
+.dropdown__company:hover .company__content {
+  display: block;
+}
+
+.dropdown__company .company__content {
+  position: absolute;
+  top: 42px;
+  left: 0px;
+  background-color: rgb(255, 255, 255);
+  display: none;
+  width: 75px;
+  height: 85px;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 14px 11px 15px 0px rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.507);
+  text-decoration: none;
+  font-family: "Epilogue", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.dropdown__company .company__content ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 13.5px;
+  padding: 4px;
+}
+
+.dropdown__company .company__content li {
+  transition: 0.4s;
+}
+
+.dropdown__company .company__content li:hover {
+  color: black;
+  cursor: pointer;
+}
+
+/* Header buttons */
+.header__entrance .button__entrance {
+  color: rgba(0, 0, 0, 0.507);
+  text-align: center;
+  background-color: transparent;
+  font-size: 14px;
+  font-weight: 700;
+  margin: 10px;
+  transition: 0.4s;
+}
+
+.header__entrance .register {
+  color: rgba(0, 0, 0, 0.507);
+  border: 2.4px solid rgba(0, 0, 0, 0.507);
+  border-radius: 15px;
+  padding: 10px;
+  width: 90px;
+  margin-left: 20px;
+  transition: 0.4s;
+}
+
+.header__entrance .button__entrance:hover,
+.header .register:hover {
+  color: black;
+}
+
+.header .register:hover {
+  border: 2.4px solid black;
 }
