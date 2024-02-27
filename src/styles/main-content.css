@@ -1,15 +1,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap");
 
+html {
+  width: 100vw;
+  height: 100vh;
+}
+
 body {
   background-color: rgb(250, 250, 250);
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  width: 100%;
+  height: 100%;
   position: relative;
+  z-index: 0;
+}
+
+.background {
+  background-color: rgb(80, 80, 80);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: none;
+  z-index: 1;
 }
 
 .header {
-  position: absolute;
+  grid-column-start: 1;
+  grid-column-end: 6;
+  z-index: 2;
+  height: 30%;
+  /* position: absolute;
   top: 0;
   left: 0;
-  right: 0;
+  right: 0; */
 }
 
 .header__navigation {
@@ -17,7 +41,7 @@ body {
   justify-content: space-between;
   align-items: center;
   margin: 0.5rem 1rem 0.5rem 1rem;
-  gap: 50px;
+  /* gap: 50px; */
 }
 
 .header__close {
@@ -86,22 +110,26 @@ body {
 
 .dropdown__features .features__content {
   position: absolute;
-  top: 42px;
+  top: 32px;
   right: 2px;
   background-color: rgb(255, 255, 255);
   display: none;
-  width: 100px;
+  width: 120px;
   height: 110px;
   padding: 15px;
   border-radius: 15px;
   box-shadow: 14px 11px 15px 0px rgba(0, 0, 0, 0.1);
 }
 
+/* Melhorar dropdowns */
+
 .dropdown__features .features__content a {
+  position: relative;
+  left: 10px;
   display: flex;
   align-items: center;
   margin-top: 10px;
-  gap: 10px;
+  gap: 15px;
   font-size: 14px;
   font-weight: 500;
 }
@@ -127,7 +155,7 @@ body {
 
 .dropdown__company .company__content {
   position: absolute;
-  top: 42px;
+  top: 32px;
   left: 0px;
   background-color: rgb(255, 255, 255);
   display: none;
@@ -163,6 +191,8 @@ body {
 
 /* Header buttons */
 .header__entrance .button__entrance {
+  grid-column-start: 5;
+  grid-column-end: 6;
   color: rgba(0, 0, 0, 0.507);
   text-align: center;
   background-color: transparent;
@@ -174,7 +204,7 @@ body {
 
 .header__entrance .register {
   color: rgba(0, 0, 0, 0.507);
-  border: 2.4px solid rgba(0, 0, 0, 0.507);
+  border: 1px solid rgba(0, 0, 0, 0.507);
   border-radius: 15px;
   padding: 10px;
   width: 90px;
@@ -188,5 +218,75 @@ body {
 }
 
 .header .register:hover {
-  border: 2.4px solid black;
+  border: 1px solid black;
+}
+
+/* Main content */
+main {
+  grid-column: 1/6;
+  grid-row: 2/7;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 185px;
+}
+
+.main__info {
+  /* margin-top: 120px; */
+  position: relative;
+  top: 85px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.info__text {
+  font-family: "Epilogue", sans-serif;
+}
+
+.title {
+  font-size: 60px;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.text {
+  font-size: 17px;
+  font-weight: 600;
+  color: rgb(164, 164, 164);
+}
+
+.info__button {
+  background-color: black;
+  width: 150px;
+  height: 45px;
+  border-radius: 15px;
+  color: white;
+  font-family: "Epilogue", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  transition: 0.4s;
+}
+
+.info__button:hover {
+  background-color: transparent;
+  border: 1px solid black;
+  color: black;
+}
+
+.info__imgs {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.info__imgs img {
+  width: 20%;
+  height: 40%;
+}
+
+.main__img {
+  width: 395px;
+  height: 450px;
 }
