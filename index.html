@@ -16,9 +16,6 @@
     <div class="background"></div>
     <div class="header">
       <nav class="header__navigation">
-        <div class="header__close">
-          <img src="./src/assets/icons/icon-close-menu.svg" />
-        </div>
         <div class="header__main">
           <div class="header__logo">
             <a href="">
@@ -26,6 +23,9 @@
             </a>
           </div>
           <ul class="header__options">
+            <div class="header__close">
+              <img src="./src/assets/icons/icon-close-menu.svg" />
+            </div>
             <li class="dropdown__features">
               <a href="" class="features__hover">
                 <span>Features</span>
@@ -81,15 +81,20 @@
                 <span>About</span>
               </a>
             </li>
+            <li>
+              <div class="header__entrance">
+                <button class="button__entrance login">
+                  <span>Login</span>
+                </button>
+                <button class="button__entrance register">
+                  <span>Register</span>
+                </button>
+              </div>
+            </li>
           </ul>
         </div>
-        <div class="header__entrance">
-          <button class="button__entrance login">
-            <span>Login</span>
-          </button>
-          <button class="button__entrance register">
-            <span>Register</span>
-          </button>
+        <div class="header__menu">
+          <img src="./src/assets/icons/icon-menu.svg" alt="" />
         </div>
       </nav>
     </div>
