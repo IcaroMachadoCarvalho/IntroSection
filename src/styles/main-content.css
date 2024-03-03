@@ -30,10 +30,6 @@ body {
   grid-column-end: 6;
   z-index: 2;
   height: 30%;
-  /* position: absolute;
-  top: 0;
-  left: 0;
-  right: 0; */
 }
 
 .header__navigation {
@@ -41,7 +37,6 @@ body {
   justify-content: space-between;
   align-items: center;
   margin: 0.5rem 1rem 0.5rem 1rem;
-  /* gap: 50px; */
 }
 
 .header__close,
@@ -126,7 +121,6 @@ body {
 }
 
 /* Melhorar dropdowns */
-
 .dropdown__features .features__content a {
   position: relative;
   left: 10px;
@@ -201,8 +195,6 @@ body {
 }
 
 .header__entrance .button__entrance {
-  /* grid-column-start: 5;
-  grid-column-end: 6; */
   color: rgba(0, 0, 0, 0.507);
   text-align: center;
   background-color: transparent;
@@ -242,7 +234,6 @@ main {
 }
 
 .main__info {
-  /* margin-top: 120px; */
   position: relative;
   top: 85px;
   display: flex;
@@ -336,7 +327,7 @@ main {
     margin: 15px 25px 15px 0px;
   }
 
-  /* Dropdwons for mobile */
+  /* Dropdowns for mobile */
   .dropdown__features,
   .dropdown__company {
     align-items: flex-start;
