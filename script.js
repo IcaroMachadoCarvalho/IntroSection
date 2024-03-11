@@ -3,7 +3,7 @@ const sideNav = document.getElementsByClassName("header__options")[0];
 const closeMenu = document.getElementsByClassName("header__close")[0];
 const backGround = document.getElementsByClassName("background")[0];
 
-if (window.innerWidth <= 769) {
+if (window.innerWidth <= 809) {
   openMenu.addEventListener("click", () => {
     // console.log("Abre");
     sideNav.style.width = "50%";
@@ -24,13 +24,14 @@ if (window.innerWidth <= 769) {
 
 window.addEventListener("resize", verificar);
 function verificar() {
-  console.log(window.innerWidth);
-  if (window.innerWidth > 769) {
+  // console.log(window.innerWidth);
+  if (window.innerWidth > 809) {
     // sideNav.style.backGround = "visible";
     sideNav.style.display = "flex";
     sideNav.style.width = "90%";
     openMenu.style.display = "none";
     closeMenu.style.display = "none";
+    backGround.style.visibility = "hidden";
   } else if (sideNav.style.width === "90%") {
     // sideNav.style.visibility = "hidden";
     openMenu.style.display = "block";
