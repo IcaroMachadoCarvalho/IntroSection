@@ -3,6 +3,29 @@ const sideNav = document.getElementsByClassName("header__options")[0];
 const closeMenu = document.getElementsByClassName("header__close")[0];
 const backGround = document.getElementsByClassName("background")[0];
 
+const featuresHover = document.getElementById("features");
+const companyHover = document.getElementById("company");
+
+featuresHover.addEventListener("mouseover", () => {
+  document.getElementById("featuresIcon").src =
+    "./src/assets/icons/icon-arrow-up.svg";
+});
+
+featuresHover.addEventListener("mouseout", () => {
+  document.getElementById("featuresIcon").src =
+    "./src/assets/icons/icon-arrow-down.svg";
+});
+
+companyHover.addEventListener("mouseover", () => {
+  document.getElementById("companyIcon").src =
+    "./src/assets/icons/icon-arrow-up.svg";
+});
+
+companyHover.addEventListener("mouseout", () => {
+  document.getElementById("companyIcon").src =
+    "./src/assets/icons/icon-arrow-down.svg";
+});
+
 if (window.innerWidth <= 809) {
   openMenu.addEventListener("click", () => {
     // console.log("Abre");
