@@ -16,6 +16,7 @@ body {
   z-index: 0;
 }
 
+/* Background for mobile menu */
 .background {
   background-color: rgb(80, 80, 80);
   width: 100%;
@@ -26,6 +27,7 @@ body {
   z-index: 1;
 }
 
+/* Header */
 .header {
   grid-column-start: 1;
   grid-column-end: 6;
@@ -121,7 +123,6 @@ body {
   box-shadow: 14px 11px 15px 0px rgba(0, 0, 0, 0.1);
 }
 
-/* Melhorar dropdowns */
 .dropdown__features .features__content a {
   position: relative;
   left: 10px;
@@ -249,7 +250,7 @@ main {
 }
 
 .title {
-  font-size: calc(3em + 0.6vw);
+  font-size: calc(2.7em + 0.6vw);
   font-weight: 600;
   margin-top: 5px;
 }
@@ -299,11 +300,13 @@ main {
   height: 450px;
 }
 
+/* Mobile screen */
 @media (max-width: 809px) {
   body {
     overflow-x: hidden;
   }
 
+  /* Header */
   .header__main {
     gap: 70px;
   }
@@ -343,7 +346,7 @@ main {
   .header__close {
     align-self: flex-end;
     display: none;
-    margin: 15px 45px 15px 0px;
+    margin: 15px 65px 15px 0px;
     cursor: pointer;
   }
 
@@ -421,17 +424,17 @@ main {
 
   main .main__img {
     position: relative;
-    max-width: 100%;
-    width: auto;
+    min-width: 55%;
     height: 70%;
     bottom: 15px;
     margin-top: 20px;
+    object-position: bottom;
   }
 
   main .main__info {
     justify-content: flex-start;
     align-items: center;
-    max-width: 100%;
+    min-width: 55%;
     height: 55%;
     top: 0px;
     gap: 16px;
@@ -449,7 +452,6 @@ main {
     text-align: justify;
   }
   main .info__imgs {
-    /* background-color: red; */
     gap: 20px;
     width: 76%;
     height: 64px;
