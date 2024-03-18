@@ -1,8 +1,8 @@
 # IntroSection
 <b><i>©️IcaroMachadoCarvalho</i></b>
 
-<div style="display:block; margin: 10px 10px 10px 10px">
-    <img src="https://snappify.com/_next/image?url=%2Fimages%2Fblog%2Fproducthunt-gif%2Flogo.gif&w=256&q=75" style="width: 100%; height: 400px;">
+<div align="center" border-radius="15px">
+    <img src="https://snappify.com/_next/image?url=%2Fimages%2Fblog%2Fproducthunt-gif%2Flogo.gif&w=256&q=75" style="width: 70%; height: 400px;">
 </div>
 <p>
   Esse projeto mostra uma página de introdutória do um site <b>Snap</b> idealizada pelo FrontEnd Mentor. Tendo em sua composição o conteúdo principal, uma navbar com dropdwons e icones.
@@ -17,5 +17,5 @@
 </div>
 
 ## Achou interessante?
-> <b>Confira projetos finalizados e os que estão por vir!<b>
+> <b>Confira projetos finalizados e os que estão por vir!<b><br>
 > <a href="https://github.com/IcaroMachadoCarvalho">Veja mais</a>
