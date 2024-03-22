@@ -10,12 +10,12 @@ const companyHover = document.getElementById("company");
 // Mouse over on features dropdown changes the icon
 featuresHover.addEventListener("mouseover", () => {
   document.getElementById("featuresIcon").src =
-  "./src/assets/icons/icon-arrow-up.svg";
+    "./src/assets/icons/icon-arrow-up.svg";
 });
 
 featuresHover.addEventListener("mouseout", () => {
   document.getElementById("featuresIcon").src =
-  "./src/assets/icons/icon-arrow-down.svg";
+    "./src/assets/icons/icon-arrow-down.svg";
 });
 
 // Mouse over on company dropdown changes the icon

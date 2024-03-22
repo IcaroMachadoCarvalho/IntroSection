@@ -1,5 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap");
 
+@keyframes signal {
+  25%{
+    transform: rotateZ(29deg);
+  }
+  50%{
+    transform: rotateZ(0deg);
+  }
+  75%{
+    transform: rotateZ(-29deg);
+  }
+}
+
+
 html {
   width: 100vw;
   height: 100vh;
@@ -132,6 +145,16 @@ body {
   gap: 15px;
   font-size: 14px;
   font-weight: 500;
+}
+
+.features__list:hover img,
+.features__calendar:hover img,
+.features__reminders:hover img,
+.features__planning:hover img {
+  animation-name: signal;
+  animation-duration: 0.4s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
 }
 
 .dropdown__company {
@@ -371,6 +394,7 @@ main {
     border-radius: 0px;
     box-shadow: none;
   }
+
   .dropdown__company .company__content {
     margin-top: 5px;
   }
@@ -381,6 +405,10 @@ main {
   .dropdown__features .features__hover:hover .features__content,
   .dropdown__company .company__hover:hover .company__content {
     display: block;
+  }
+
+  .features__links {
+    animation: none;
   }
 
   .header__options .li__entrance {
