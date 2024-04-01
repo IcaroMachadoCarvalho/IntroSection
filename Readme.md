@@ -1,13 +1,13 @@
 <h1>IntroSection</h1>
 
-<p align="center"><img src="https://snappify.com/_next/image?url=%2Fimages%2Fblog%2Fproducthunt-gif%2Flogo.gif&amp;w=256&amp;q=75" alt="project-image" width="45%" height="400/"></p>
+<p align="center"><img src="https://github.com/IcaroMachadoCarvalho/IntroSection/assets/133804302/18a1634a-3a58-4b85-8638-f60ceeb5b254" alt="project-image" width="70%" height="400/"></p>
 
 <p id="description">Esse projeto mostra uma página de introdutória de um site chamado Snap idealizada pelo FrontEnd Mentor. Tendo em sua composição o conteúdo principal uma navbar com dropdwons, ícones e botões.</p>
 
 <h2>Screenshots</h2>
 <div align="center">
-    <img src="https://snappify.com/_next/image?url=%2Fimages%2Fblog%2Fproducthunt-gif%2Flogo.gif&amp;w=256&amp;q=75" alt="project-screenshot" width="45%" height="400/"><br>
-    <img src="https://snappify.com/_next/image?url=%2Fimages%2Fblog%2Fproducthunt-gif%2Flogo.gif&amp;w=256&amp;q=75" alt="project-screenshot" width="45%" height="400/">
+    <img src="https://github.com/IcaroMachadoCarvalho/IntroSection/src/assets/videos/video-version-desktop-snap.mp4" width="70%" height="400/"><br>
+    <img src="https://github.com/IcaroMachadoCarvalho/IntroSection/src/assets/videos/video-version-mobile-snap.mp4" alt="project-screenshot" width="45%" height="auto/">
 </div>
 
 <h2>🧐 Recursos principais</h2>
