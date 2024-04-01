@@ -1,17 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap");
 
 @keyframes signal {
-  25%{
+  25% {
     transform: rotateZ(29deg);
   }
-  50%{
+  50% {
     transform: rotateZ(0deg);
   }
-  75%{
+  75% {
     transform: rotateZ(-29deg);
   }
 }
-
 
 html {
   width: 100vw;
@@ -147,6 +146,7 @@ body {
   font-weight: 500;
 }
 
+/* Animation when hovering over icon*/
 .features__list:hover img,
 .features__calendar:hover img,
 .features__reminders:hover img,
@@ -250,6 +250,7 @@ body {
 
 /* Main content */
 main {
+  margin-top: 50px;
   grid-column: 1/6;
   grid-row: 2/7;
   display: flex;
@@ -355,7 +356,7 @@ main {
     flex-direction: column;
     justify-content: start;
     align-items: flex-start;
-    gap: 17px;
+    gap: 40px;
     padding-left: 25px;
     position: absolute;
     top: 0;
@@ -384,15 +385,36 @@ main {
     height: auto;
   }
 
+  .dropdown__features,
+  .dropdown__company {
+    height: 16px;
+    transition: height 0.9s;
+  }
+
+  .dropdown__features:hover {
+    height: 130px;
+  }
+
+  .dropdown__company:hover {
+    height: 110px;
+  }
+
+  .dropdown__features:hover .features__content,
+  .dropdown__company:hover .company__content {
+    visibility: visible;
+    opacity: 1;
+  }
+
   .dropdown__features .features__content,
   .dropdown__company .company__content {
     background-color: transparent;
-    display: none;
+    visibility: hidden;
     position: relative;
     top: 0;
     padding: 15px 15px 0px 15px;
     border-radius: 0px;
     box-shadow: none;
+    opacity: 0;
   }
 
   .dropdown__company .company__content {
@@ -400,15 +422,6 @@ main {
   }
   .dropdown__company .company__content span {
     gap: 12px;
-  }
-
-  .dropdown__features .features__hover:hover .features__content,
-  .dropdown__company .company__hover:hover .company__content {
-    display: block;
-  }
-
-  .features__links {
-    animation: none;
   }
 
   .header__options .li__entrance {
