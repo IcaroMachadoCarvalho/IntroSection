@@ -12,18 +12,20 @@
   }
 }
 
-html {
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
   width: 100vw;
   height: 100vh;
+  position: relative;
 }
 
 body {
   background-color: rgb(250, 250, 250);
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-  width: 100%;
-  height: 100%;
   position: relative;
   z-index: 0;
 }
@@ -31,27 +33,28 @@ body {
 /* Background for mobile menu */
 .background {
   background-color: rgb(80, 80, 80);
+  display: none;
   width: 100%;
   height: 100%;
   position: absolute;
-  display: none;
   opacity: 0.5;
   z-index: 1;
 }
 
 /* Header */
 .header {
-  grid-column-start: 1;
-  grid-column-end: 6;
+  width: 98%;
+  height: 60px;
+  margin: 0 auto;
   z-index: 2;
-  height: 30%;
 }
 
 .header__navigation {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0.5rem 1rem 0.5rem 1rem;
+  padding: 10px 0px;
+  margin: 0 30px;
 }
 
 .header__close,
@@ -61,24 +64,25 @@ body {
 
 .header__main {
   width: 100%;
+  height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 60px;
+  gap: 40px;
+  position: relative;
 }
 
 .header__logo {
-  margin-top: 10px;
-  margin-left: 20px;
+  padding-top: 10px;
 }
 
 .header__options {
-  position: relative;
   width: 90%;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   gap: 20px;
+  position: relative;
 }
 
 .header__options a {
@@ -123,27 +127,27 @@ body {
 }
 
 .dropdown__features .features__content {
+  background-color: rgb(255, 255, 255);
+  width: 120px;
+  height: 110px;
+  display: none;
   position: absolute;
   top: 32px;
   right: 2px;
-  background-color: rgb(255, 255, 255);
-  display: none;
-  width: 120px;
-  height: 110px;
   padding: 15px;
   border-radius: 15px;
   box-shadow: 14px 11px 15px 0px rgba(0, 0, 0, 0.1);
 }
 
 .dropdown__features .features__content a {
-  position: relative;
-  left: 10px;
   display: flex;
   align-items: center;
-  margin-top: 10px;
   gap: 15px;
   font-size: 14px;
   font-weight: 500;
+  position: relative;
+  left: 10px;
+  margin-top: 10px;
 }
 
 /* Animation when hovering over icon*/
@@ -177,21 +181,21 @@ body {
 }
 
 .dropdown__company .company__content {
+  background-color: rgb(255, 255, 255);
+  width: 75px;
+  height: 85px;
+  display: none;
   position: absolute;
   top: 32px;
   left: 0px;
-  background-color: rgb(255, 255, 255);
-  display: none;
-  width: 75px;
-  height: 85px;
-  padding: 15px;
-  border-radius: 15px;
-  box-shadow: 14px 11px 15px 0px rgba(0, 0, 0, 0.1);
   color: rgba(0, 0, 0, 0.507);
   text-decoration: none;
   font-family: "Epilogue", sans-serif;
   font-size: 14px;
   font-weight: 500;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 14px 11px 15px 0px rgba(0, 0, 0, 0.1);
 }
 
 .dropdown__company .company__content ul {
@@ -215,27 +219,29 @@ body {
 /* Header buttons */
 .header__entrance {
   position: absolute;
-  top: -12px;
-  right: 30px;
+  right: 0px;
+  top: 0px;
 }
 
 .header__entrance .button__entrance {
+  background-color: transparent;
   color: rgba(0, 0, 0, 0.507);
   text-align: center;
-  background-color: transparent;
   font-size: 16px;
   font-weight: 700;
-  margin: 10px;
+  margin: 0px 10px;
+  padding: 10px 0px;
   transition: 0.4s;
 }
 
 .header__entrance .register {
+  width: 90px;
   color: rgba(0, 0, 0, 0.507);
+  padding: 12px;
+  margin-left: 20px;
+  margin-right: 0px;
   border: 1px solid rgba(0, 0, 0, 0.507);
   border-radius: 15px;
-  padding: 12px;
-  width: 90px;
-  margin-left: 20px;
   transition: 0.4s;
 }
 
@@ -250,23 +256,24 @@ body {
 
 /* Main content */
 main {
-  margin-top: 50px;
-  grid-column: 1/6;
-  grid-row: 2/7;
+  width: 90%;
+  height: auto;
   display: flex;
   justify-content: space-around;
   align-items: start;
   gap: 10px;
+  padding-top: 65px;
+  margin: 0 auto;
 }
 
 .main__info {
-  max-width: 415px;
-  position: relative;
-  top: 85px;
+  width: 45%;
+  height: 450px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 40px;
+  gap: 35px;
+  justify-content: flex-end;
 }
 
 .info__text {
@@ -274,7 +281,7 @@ main {
 }
 
 .title {
-  font-size: calc(2.7em + 0.6vw);
+  font-size: 55px;
   font-weight: 600;
   margin-top: 5px;
 }
@@ -284,53 +291,79 @@ main {
 }
 
 .text {
-  font-size: 17px;
-  font-weight: 600;
   color: rgb(164, 164, 164);
+  font-size: clamp(0.8125rem, 0.25rem + 1.1719vw, 1rem);
+  font-weight: 600;
 }
 
 .info__button {
   background-color: black;
   width: 150px;
   height: 45px;
-  border-radius: 15px;
   color: white;
   font-family: "Epilogue", sans-serif;
   font-size: 14px;
   font-weight: 700;
+  border-radius: 15px;
   transition: 0.4s;
 }
 
 .info__button:hover {
   background-color: transparent;
-  border: 1px solid black;
   color: black;
+  border: 1px solid black;
 }
 
 .info__imgs {
+  height: 75px;
+  width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  padding: 5px;
 }
 
 .info__imgs img {
-  width: 20%;
-  height: 40%;
+  width: 15%;
+  height: 43%;
+  aspect-ratio: 1/1;
 }
 
 .main__img {
   object-position: bottom;
-  min-width: 37%;
+  width: auto;
   height: 450px;
 }
 
-/* Mobile screen */
-@media (max-width: 809px) {
+/* Desktop */
+@media (max-width: 1350px) {
+  main {
+    padding-top: 40px;
+  }
+
+  .main__info {
+    width: 50%;
+    height: 420px;
+  }
+
+  .title {
+    font-size: clamp(3rem, -0.6971rem + 7.6923vw, 3.4375rem);
+  }
+
+  .text {
+    font-size: clamp(0.8125rem, -0.772rem + 3.2967vw, 1rem);
+  }
+  .main__img {
+    height: 420px;
+  }
+}
+
+/* Tablet screen */
+@media (max-width: 768px) {
   body {
     overflow-x: hidden;
   }
 
-  /* Header */
   .header__main {
     gap: 70px;
   }
@@ -339,38 +372,34 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0.5rem;
+    margin: 0rem 0.4rem;
   }
 
   .header__menu {
     display: block;
-    margin-right: 25px;
     cursor: pointer;
   }
 
   /* Side nav */
   .header__options {
     background-color: white;
-    display: flex;
-    width: 0px;
+    width: 60%;
     flex-direction: column;
     justify-content: start;
-    align-items: flex-start;
+    align-items: center;
     gap: 40px;
-    padding-left: 25px;
-    position: absolute;
-    top: 0;
-    right: -25px;
+    position: fixed;
+    top: 0px;
+    right: -60%;
     bottom: 0;
-    width: 0px;
     z-index: 1;
     transition: 0.4s;
   }
 
   .header__close {
-    align-self: flex-end;
     display: none;
-    margin: 15px 65px 15px 0px;
+    align-self: flex-end;
+    margin: 20px 20px;
     cursor: pointer;
   }
 
@@ -425,9 +454,9 @@ main {
   }
 
   .header__options .li__entrance {
-    align-self: center;
     width: 90%;
     display: flex;
+    align-self: center;
     justify-content: center;
     position: relative;
     right: 8%;
@@ -435,15 +464,11 @@ main {
   }
 
   .header__entrance {
+    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 70%;
-    align-self: center;
-    position: relative;
-    top: 0;
-    left: 0;
   }
 
   .header__entrance .button__entrance {
@@ -453,54 +478,72 @@ main {
 
   /* Main */
   main {
+    width: 100%;
+    display: flex;
     grid-column: 1/6;
     flex-direction: column-reverse;
     justify-content: flex-end;
     align-items: center;
     gap: 20px;
-    display: flex;
     position: relative;
-    bottom: 46px;
+    margin: 0;
   }
 
   main .main__img {
+    width: 100%;
+    height: 275px;
     position: relative;
-    min-width: 55%;
-    height: 70%;
-    bottom: 15px;
-    margin-top: 20px;
     object-position: bottom;
+    margin-top: 20px;
   }
 
   main .main__info {
+    width: 100%;
+    height: 55%;
     justify-content: flex-start;
     align-items: center;
-    min-width: 55%;
-    height: 55%;
     top: 0px;
     gap: 16px;
+    margin: 0px 10px;
   }
 
   main .main__info .title {
-    font-size: 34px;
+    font-size: 28px;
   }
 
   main .main__info .title span {
     display: inline;
   }
   main .main__info .text {
+    width: 80%;
     font-size: 16px;
-    text-align: justify;
+    text-align: center;
   }
   main .info__imgs {
-    gap: 20px;
-    width: 76%;
-    height: 64px;
-    margin-bottom: 40px;
+    width: 55%;
+    height: 27px;
+    margin: 20px 0px;
   }
 
   main .info__imgs img {
     width: 19%;
-    height: 36%;
+    height: inherit;
+  }
+}
+
+/* Tablet */
+@media (min-width: 481px) and (max-width: 768px) {
+  main .main__img {
+    width: 80%;
+  }
+
+  .info__button {
+    width: 55%;
+  }
+}
+
+@media (max-width: 481px) {
+  main .info__imgs {
+    width: 80%;
   }
 }
