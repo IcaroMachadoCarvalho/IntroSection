@@ -14,9 +14,9 @@
 
 <h2>Screenshots Mobile e Tablet</h2>
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/d8c1660f-c805-4f20-9e2b-5a9907981213" alt="img-mobile1" width="22.5%" height="400/">
-  <img src="https://github.com/user-attachments/assets/6ddae422-6840-4be6-91cd-e820ecced3b7" alt="img-mobile2" width="22.5%" height="400/">
-  <img src="https://github.com/user-attachments/assets/2a955040-9ac8-412a-9437-7f1cc73b79ca" alt="img-mobile3" width="22.5%" height="400/">
+  <img src="https://github.com/user-attachments/assets/d8c1660f-c805-4f20-9e2b-5a9907981213" alt="img-mobile1" width="33.5%" height="450/">
+  <img src="https://github.com/user-attachments/assets/6ddae422-6840-4be6-91cd-e820ecced3b7" alt="img-mobile2" width="33.5%" height="450/">
+  <img src="https://github.com/user-attachments/assets/2a955040-9ac8-412a-9437-7f1cc73b79ca" alt="img-mobile3" width="50%" height="400/">
   
 </div>
 <h2>Screenshots Desktop</h2>
