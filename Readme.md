@@ -1,6 +1,6 @@
 <h1>IntroSection</h1>
 
-<p align="center"><img src="https://github.com/user-attachments/assets/25a91c6f-3eb5-4fc3-b96e-99db782f56b0" alt="project-image" width="80%" height="400/"></p>
+<p align="center"><img src="https://github.com/user-attachments/assets/25a91c6f-3eb5-4fc3-b96e-99db782f56b0" alt="project-image" width="100%" height="60%/"></p>
 
 <p id="description">Esse projeto mostra uma página de introdutória de um site chamado Snap idealizada pelo FrontEnd Mentor. Tendo em sua composição o conteúdo principal uma navbar com dropdwons, ícones e botões.</p>
 
@@ -14,14 +14,14 @@
 
 <h2>Screenshots Mobile e Tablet</h2>
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/d8c1660f-c805-4f20-9e2b-5a9907981213" alt="img-mobile1" width="33.5%" height="450/">
-  <img src="https://github.com/user-attachments/assets/6ddae422-6840-4be6-91cd-e820ecced3b7" alt="img-mobile2" width="33.5%" height="450/">
-  <img src="https://github.com/user-attachments/assets/2a955040-9ac8-412a-9437-7f1cc73b79ca" alt="img-mobile3" width="50%" height="400/">
+  <img src="https://github.com/user-attachments/assets/d8c1660f-c805-4f20-9e2b-5a9907981213" alt="img-mobile1" width="40%" height="60%/">
+  <img src="https://github.com/user-attachments/assets/6ddae422-6840-4be6-91cd-e820ecced3b7" alt="img-mobile2" width="40%" height="60%/">
+  <img src="https://github.com/user-attachments/assets/2a955040-9ac8-412a-9437-7f1cc73b79ca" alt="img-mobile3" width="60%" height="60%/">
   
 </div>
 <h2>Screenshots Desktop</h2>
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/25a91c6f-3eb5-4fc3-b96e-99db782f56b0" alt="img-desktop1" width="80%" height="400/">
+  <img src="https://github.com/user-attachments/assets/25a91c6f-3eb5-4fc3-b96e-99db782f56b0" alt="img-desktop1" width="100%" height="60%/">
 </div>
 
 
